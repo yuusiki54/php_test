@@ -1,5 +1,5 @@
 <?php 
 $yuu = "aoyu";
 echo $yuu;
-echo $yuu."さーん"
+echo $yuu."さーん。あああああああ"
 ?>
