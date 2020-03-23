@@ -1,4 +1,9 @@
 <?php
+if(isset($_POST['num1'])){
+    echo "入力されています";
+}else{
+    echo "入力されていません";
+}
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $num1 = $_POST["num1"];
     $num2 = $_POST["num2"];
@@ -15,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             break;
         case "div":
             echo $num1 - $num2;
-            break;
+        break;
     }
 }
 ?>
@@ -42,5 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="submit" value="=">
     </form>
 </body>
+
 
 </html>
