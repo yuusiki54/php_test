@@ -1,12 +1,7 @@
 <?php
-if(isset($_POST['num1'])){
-    echo "入力されています";
-}else{
-    echo "入力されていません";
-}
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $num1 = $_POST["num1"];
-    $num2 = $_POST["num2"];
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $num1 = (int)$_POST["num1"];
+    $num2 = (int)$_POST["num2"];
     $op = $_POST["op"];
     switch ($op) {
         case "plus":
